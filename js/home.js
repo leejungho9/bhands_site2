@@ -20,6 +20,7 @@ function showSidebar() {
 
 function showworkMenu() {
   console.log("work 버튼 클릭" + workMenu);
+  workMenu = !workMenu;
   workMenu
     ? (workMenuEl.className = "work-menu active")
     : (workMenuEl.className = "work-menu");
@@ -27,70 +28,38 @@ function showworkMenu() {
   workMenu
     ? (workMenuUl.className = "work-menu-ul active")
     : (workMenuUl.className = "work-menu-ul");
-  workMenu = !workMenu;
 }
+
+let path = window.location.pathname;
+console.log(path);
 if (sidebar === true) {
   setworkMenu(false);
   setworkMenu();
 }
 
-let path = window.location.pathname;
-console.log(path);
+let artgoodsEl = document.querySelector(".a_artgoods");
+let calendarEl = document.querySelector(".a_calendar");
+let diaryEl = document.querySelector(".a_diary");
+let packageEl = document.querySelector(".a_package");
+let cardEl = document.querySelector(".a_card");
+let catalogueEl = document.querySelector(".a_catalogue");
 
-if (!sidebar) {
-  setworkMenu(false);
+if (path == "/html/artgoods.html") {
+  showworkMenu();
+  artgoodsEl.className = "detailMenu active";
+} else if (path == "/html/calendar.html") {
+  showworkMenu();
+  calendarEl.className = "detailMenu active";
+} else if (path == "/html/diary.html") {
+  showworkMenu();
+  diaryEl.className = "detailMenu active";
+} else if (path == "/html/package.html") {
+  showworkMenu();
+  packageEl.className = "detailMenu active";
+} else if (path == "/html/card.html") {
+  showworkMenu();
+  cardEl.className = "detailMenu active";
+} else if (path == "/catalogue") {
+  showworkMenu();
+  catalogueEl.className = "detailMenu active";
 }
-if (
-  path !== "/" &&
-  path !== "/about" &&
-  path !== "/contact" &&
-  path !== "/artist"
-) {
-} else {
-  setworkMenu(true);
-}
-
-function workdetailMenu(e) {
-  console("눌렷당");
-  console.log(e);
-}
-
-window.onload = function () {
-  let artgoodsEl = document.getElementsByClassName(".a_artgoods");
-  let calendarEl = document.querySelector(".a_calendar");
-  let diaryEl = document.querySelector(".a_diary");
-  let packageEl = document.querySelector(".a_package");
-  let cardEl = document.querySelector(".a_card");
-  let catalogueEl = document.querySelector(".a_catalogue");
-
-  if (path == "/html/artgoods.html") {
-    artgoodsEl.className = "detailMenu active";
-  } else if (path == "/calendar.html") {
-    calendarEl.className = "detailMenu active";
-  } else if (path == "/diary") {
-    diaryEl.className = "detailMenu active";
-  } else if (path == "/package") {
-    packageEl.className = "detailMenu active";
-  } else if (path == "/card") {
-    cardEl.className = "detailMenu active";
-  } else if (path == "/catalogue") {
-    catalogueEl.className = "detailMenu active";
-  }
-  let detailMenuEl = document.querySelectorAll(".detialMenu");
-  console.log(detailMenuEl);
-
-  for (var i = 0; i < detailMenuEl.length; i++) {
-    detailMenuEl[i].addEventListener("click", function () {
-      console.log("클릭");
-    });
-  }
-};
-
-// let currentMenu;
-// let menu = document.querySelector(".work-menu-ul > li > a");
-// menu.addEventListener("click", clickHandler);
-// console.log(menu);
-
-// function clickHandler(e) {
-//   console.log(e);
-// }

@@ -1,4 +1,4 @@
-.calendar {
+.calendar_section {
   margin: auto;
   width: 1284px;
   display: flex;
@@ -88,6 +88,21 @@
   padding: 10px;
 }
 
+.sliderCloseBtn {
+  position: absolute;
+  /* width: 34px;
+  height: 34px; */
+  z-index: 1;
+  top: 25px;
+  right: 86px;
+  cursor: pointer;
+  color: #3e3a39;
+}
+
+.sliderCloseBtn-hidden {
+  display: none;
+}
+
 /*페이징처리*/
 .pageArea {
   display: flex;
@@ -112,18 +127,4 @@
 }
 .fas fa-angle-double-left {
   font-size: 13px;
-}
-.sliderCloseBtn {
-  position: absolute;
-  width: 34px;
-  height: 34px;
-  z-index: 1;
-  top: 25px;
-  right: 86px;
-  cursor: pointer;
-  color: #3e3a39;
-}
-
-.sliderColseBtn-hidden {
-  display: none;
 }

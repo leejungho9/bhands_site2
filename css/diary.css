@@ -1,4 +1,4 @@
-.dairy {
+.diary_section {
   margin: auto;
   width: 1284px;
   display: flex;
@@ -18,7 +18,12 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.topMenu-hidden {
+  display: none;
+}
+.topMenu-hidden ~ .inner {
+  margin-top: 50px;
+}
 .year span {
   margin-right: 20px;
   font-size: 15px;
@@ -52,7 +57,7 @@
   height: 15px;
 }
 
-.diary_inner {
+.inner {
   display: grid;
   grid-template-rows: repeat(2);
   row-gap: 50px;
@@ -63,8 +68,9 @@
 
 .diary_box {
   box-sizing: border-box;
+  cursor: pointer;
 }
-.calendarImage {
+.diaryImage {
   width: 369px;
   height: 440px;
 }
@@ -80,6 +86,21 @@
   color: #595757;
   font-size: 15px;
   padding: 10px;
+}
+
+.sliderCloseBtn {
+  position: absolute;
+  /* width: 34px;
+  height: 34px; */
+  z-index: 1;
+  top: 25px;
+  right: 86px;
+  cursor: pointer;
+  color: #3e3a39;
+}
+
+.sliderCloseBtn-hidden {
+  display: none;
 }
 
 /*페이징처리*/
