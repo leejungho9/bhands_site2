@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비핸즈</title>
 
     <!-- reset css cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
@@ -11,27 +12,18 @@
     <!--fontawesome cdn-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!--jQuery cdn -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-
-  
-
     
     <!--css 연결-->
     <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/slick-theme.css" />
-    <link rel="stylesheet" href="../css/slick.css" /> 
-    <link rel="stylesheet" href="../css/diary.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="../css/catalogue.css" />
     
-    
-
-    <title>비핸즈</title>
-
-
-  <link>
   </head>
   <body>
+
+
     <!--header-->
     <div class="bar"></div>
       <header>
@@ -90,7 +82,7 @@
                 </li>
                 <li>
                   <a
-                    href="package.html"
+                    href="pacakge.html"
                     class="a_package"
                   >
                     PACKAGE
@@ -126,206 +118,129 @@
       </header>
 
       <!--body-->
-      <section class="diary_section">
-        <i class="fa-solid fa-xmark sliderCloseBtn-hidden" style="font-size: 34px;" onclick="closeSlider()"></i>
-        <!-- slider section -->
-        <div class="sliderArea-hidden">
-          <div class="image_container">
-            <div class="slick-slider">
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slider-Img"
-                class="slideImg"
+      <section  class="catalogue_section">
+        <div  class="catalogue_container">
+          <div  class="inner">
+            <div  class="catalogue_box">
+              <img
+                alt="다이어리"
+                 class="catalogueImage"
+                src="../images/calendar_02.png"
               />
+              <div  class="info">
+                <span>2022</span>
+                <span>삼성생명 VIP</span>
               </div>
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slide-Img"
-                class="slideImg"
+            </div>
+  
+            <div  class="catalogue_box">
+              <img
+                alt="캘린더"
+                 class="catalogueImage"
+                src="../images/calendar_02.png"
               />
+              <div  class="info">
+                <span>2022</span>
+                <span>삼성생명 VIP</span>
               </div>
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slide-Img"
-                class="slideImg"
+            </div>
+  
+            <div  class="catalogue_box">
+              <img
+                alt="캘린더"
+                 class="catalogueImage"
+                src="../images/calendar_02.png"
               />
+              <div  class="info">
+                <span>2022</span>
+                <span>삼성생명 VIP</span>
               </div>
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slide-Img"
-                class="slideImg"
+            </div>
+  
+            <div  class="catalogue_box">
+              <img
+                alt="캘린더"
+                 class="catalogueImage"
+                src="../images/calendar_02.png"
               />
+              <div  class="info">
+                <span>2022</span>
+                <span>삼성생명 VIP</span>
               </div>
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slide-Img"
-                class="slideImg"
+            </div>
+  
+            <div  class="catalogue_box">
+              <img
+                alt="캘린더"
+                 class="catalogueImage"
+                src="../images/calendar_02.png"
               />
+              <div  class="info">
+                <span>2022</span>
+                <span>삼성생명 VIP</span>
+              </div>
+            </div>
+  
+            <div  class="catalogue_box">
+              <img
+                alt="캘린더"
+                 class="catalogueImage"
+                src="../images/calendar_02.png"
+              />
+              <div  class="info">
+                <span>2022</span>
+                <span>삼성생명 VIP</span>
               </div>
             </div>
           </div>
-          <p class="imageYear">2022</p>
-          <p class="imageName">삼성화재</p>
-        </div>
 
 
-
-
-
-
-
-
-        <!-- year -->
-        <div class="diary_container">
-          <div class="topMenu">
-            <div class="year">
-            <span  class= "year_menu"> ALL </span>
-            <span  class= "year_menu"> 2021 </span>
-            <span  class= "year_menu"> 2020 </span>
-            <span  class= "year_menu"> 2019 </span>
-            <span  class= "year_menu"> 2018 </span>
-            <span  class= "year_menu"> 2017 </span>
-          </div>
-
-        <!-- search -->
-            <div class="searchArea">
-              <input type="text" placeholder="Search" class="search"></input>
-              <button class="searchBtn">
-                <img src="../images/search.png" alt="검색" class="searchImg"></img>
-              </button>
-            </div>
-          </div>
-  
-        <!--calendar content -->
-          <div class="inner">
-            <div class="diary_box" onclick="showSlider()">
-              <img
-                alt="캘린더"
-                class="diaryImage"
-                src="../images/calendar_02.png"
-              />
-  
-              <div class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
-            </div>
-  
-            <div class="diary_box">
-              <img
-                alt="캘린더"
-                class="diaryImage"
-                src="../images/calendar_02.png"
-              />
-              <div class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
-            </div>
-  
-            <div class="diary_box">
-              <img
-                alt="캘린더"
-                class="diaryImage"
-                src="../images/calendar_02.png"
-              />
-              <div class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
-            </div>
-  
-            <div class="diary_box">
-              <img
-                alt="캘린더"
-                class="diaryImage"
-                src="../images/calendar_02.png"
-              />
-              <div class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
-            </div>
-  
-            <div class="diary_box">
-              <img
-                alt="캘린더"
-                class="diaryImage"
-                src="../images/calendar_02.png"
-              />
-              <div class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
-            </div>
-  
-            <div class="diary_box">
-              <img
-                alt="캘린더"
-                class="diaryImage"
-                src="../images/calendar_02.png"
-              />
-              <div class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
-            </div>
-
-          </div>
-
-
-
-          <!--pageArea-->
-          <div class="pageArea">
-            <nav class="toolbox">
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link page-link-btn" href="#">
+          <!--pagination-->
+          <div  class="pageArea">
+            <nav  class="toolbox">
+              <ul  class="pagination">
+                <li  class="page-item">
+                  <a  class="page-link page-link-btn" href="#">
                     <i class="fa-solid fa-angles-left" style="font-size: 13px;"></i>
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link page-link-btn" href="#">
+                <li  class="page-item">
+                  <a  class="page-link page-link-btn" href="#">
                     1
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link page-link-btn" href="#">
+                <li  class="page-item">
+                  <a  class="page-link page-link-btn" href="#">
                     2
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link page-link-btn" href="#">
+                <li  class="page-item">
+                  <a  class="page-link page-link-btn" href="#">
                     3
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link page-link-btn" href="#">
+                <li  class="page-item">
+                  <a  class="page-link page-link-btn" href="#">
                     4
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link page-link-btn" href="#">
+                <li  class="page-item">
+                  <a  class="page-link page-link-btn" href="#">
                     5
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link page-link-btn" href="#">
+                <li  class="page-item">
+                  <a  class="page-link page-link-btn" href="#">
                     6
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link page-link-btn" href="#">
+                <li  class="page-item">
+                  <a  class="page-link page-link-btn" href="#">
                     7
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link page-link-btn" href="#">
+                <li  class="page-item">
+                  <a  class="page-link page-link-btn" href="#">
                     <i class="fa-solid fa-angles-right" style="font-size: 13px;"></i>
                   </a>
                 </li>
@@ -334,7 +249,6 @@
           </div>
         </div>
       </section>
-
 
 
       <!--footer-->
@@ -364,32 +278,13 @@
       </footer>
 
     
-      <script src="../js/diary.js"> </script>
+      <script src="../js/catalogue.js"> </script>
       <script src="../js/home.js"> </script>
       
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
-      <!--Slick Js-->
 
 
 
-      <script>
-        $(function () {
-          $(".slick-slider").slick({
-            slide: "div",
-            fade: true,
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            
-
-          });
-        });
-      </script>
 
   </body>
 </html>
