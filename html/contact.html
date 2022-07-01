@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/contact.css" />
     <link rel="stylesheet" href="../css/home.css" />
+      <!--Kakao Map api -->
+      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee257c9820f05d2720c9c9d01c799fd7&libraries=services,clusterer,drawing"></script>
 
-
-
+  
     <title>비핸즈</title>
     <!--grid css-->
 
@@ -69,7 +70,7 @@
                 <li>
                   <a
                     href="diary.html"
-                    class="diary"
+                    class="a_diary"
                   >
                     DIARY
                   </a>
@@ -77,7 +78,7 @@
                 <li>
                   <a
                     href="package.html"
-                    class="package"
+                    class="a_package"
                   >
                     PACKAGE
                   </a>
@@ -85,7 +86,7 @@
                 <li>
                   <a
                     href="card.html"
-                    class="card"
+                    class="a_card"
                   >
                     CARD
                   </a>
@@ -112,53 +113,53 @@
       </header>
 
       <!--body-->
-      <section class=".contact">
-        <div class=".container">
-          <div class=".contactInner">
+      <section class="contact_section">
+        <div class="contact_container">
+          <div class="contact_inner">
             <h1>DEAR. B*HANDS...</h1>
-            <div class=".contactArea">
-              <div class=".title">
-                <h2 class=".titleH2"> 제목</h2>
+            <div class="contactArea">
+              <div class="title">
+                <h2 class="titleH2"> 제목</h2>
                 <input
                   type="text"
-                  class=".titleInput"
+                  class="titleInput"
                   placeholder="SUBJECT"
                 ></input>
               </div>
-              <div class=".group">
-                <div class=".email">
-                  <h2 class=".emainH2">이메일</h2>
+              <div class="group">
+                <div class="email">
+                  <h2 class="emainH2">이메일</h2>
                   <input
                     type="text"
-                    class=".emailInput"
+                    class="emailInput"
                     placeholder="EMAIL"
                   ></input>
                 </div>
-                <div class=".name">
-                  <h2 class=".nameH2">담당자</h2>
+                <div class="name">
+                  <h2 class="nameH2">담당자</h2>
                   <input
                     type="text"
-                    class=".nameInput"
+                    class="nameInput"
                     placeholder="NAME"
                   ></input>
                 </div>
               </div>
-              <div class=".content">
+              <div class="content">
                 <h2 class="styles.cotentH2">내용</h2>
                 <textarea
-                  class=".contentInput"
+                  class="contentInput"
                   placeholder="INFOMATION"
                 ></textarea>
               </div>
-              <div class=".buttonArea">
-                <button class=".sendBtn">SEND</button>
+              <div class="buttonArea">
+                <button class="sendBtn">SEND</button>
               </div>
             </div>
           </div>
         
-          <div class=".Contactbar"></div>
-          <div class=".mapArea">
-            <!-- <Map /> -->
+          <div class="Contactbar"></div>
+          <div class="mapArea">
+            <div id="map" class="map"></div>
           </div>
         </div>
         </section>
@@ -192,9 +193,11 @@
       </footer>
 
     
-      <script src="../js/portfolio.js"> </script>
+      <script src="../js/contact.js"> </script>
       <script src="../js/home.js"> </script>
-      
+     
+ 
+
  
 
   </body>
